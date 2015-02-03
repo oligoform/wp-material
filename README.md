@@ -4,7 +4,7 @@ Wp-materials is a cool responsive free wordpress theme, it’s designed to make 
 
 * Source: [https://github.com/webaddicts/wpmaterial](https://github.com/webaddicts/wpmaterial)
 * Homepage: [http://blog.webaddicts.pl](http://blog.webaddicts.pl)
-* Support: [http://roots.io/support](http://roots.io/support/)
+* Support: [http://blog.webaddicts.pl/support](http://blog.webaddicts.pl/support/)
 * Facebook: [https://facebook.com/webaddictspl](https://facebook.com/webaddictspl)
 
 
