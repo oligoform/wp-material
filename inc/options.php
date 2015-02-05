@@ -95,6 +95,13 @@ function optionsframework_options() {
     'std' => '0px',
     'type' => 'text');
 
+      $options[] = array(
+    'name' => __('Color of sticky post class', 'wpmaterials'),
+    'desc' => __('This CSS will overwrite color of your sticky post class.', 'wpmaterials'),
+    'id' => 'wpmaterials_sticky_color',
+    'std' => '#ff9800',
+    'type' => 'color');
+
   $options[] = array(
     'name' => __('Enter your custom CSS styles', 'wpmaterials'),
     'desc' => __('This CSS will overwrite the CSS of style.css file.', 'wpmaterials'),

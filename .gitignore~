@@ -3,8 +3,7 @@
 node_modules
 assets/vendor/*
 assets/css/main.css.map
-templates/home.php
-templates/home2.php
+assets/css/*main*.css
 assets/js/*scripts*.js
 assets/js/vendor/modernizr.min.js
 assets/manifest.json

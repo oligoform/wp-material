@@ -116,6 +116,7 @@ function wpmaterials_custom_header_code() {
 
   }
 
+  $sticky = of_get_option('wpmaterials_sticky_color');
 
   $link_hover_color = of_get_option( 'link_hover_color' );
   $menu_hover_color = of_get_option( 'menu_hover_color' );
@@ -134,6 +135,10 @@ function wpmaterials_custom_header_code() {
 }
 #menu-primary-navigation > li> a {
   color: ".  $primary_color .";
+}
+
+.sticky > div > header{
+  background-color:". $sticky ."!important;
 }
 
 html{
