@@ -23,20 +23,19 @@ get_template_part('templates/header');
   <main role="main">
 
 
-  <div class="jumbotron jumbo">
-  <div class="jumbo-container text-center">
+
 
   <?php include roots_template_path(); ?>
 
   </main><!-- /.main -->
-  </div><!-- /.content -->
-  </div><!-- /.content -->
-  </div><!-- /.wrap -->
 
+  </div><!-- /.wrap -->
+ </div><!-- /.wrap -->
   <?php get_template_part('templates/footer'); ?>
-  </div>
+
   <?php wp_footer(); ?>
-  </div></div>
+  </div>
+  </div>
   </body>
   </html>
 

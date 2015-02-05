@@ -160,7 +160,7 @@ body{
   background-color: ".  $primary_color ."; color:white;
   }
 
-  .title-bg {
+  article header{
   background-color: ".  $primary_color .";
   }
 

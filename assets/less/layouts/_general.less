@@ -22,7 +22,11 @@ main{
 }
 
 .text-page {
+  padding-left:60px;
 
+  & ul {
+    padding-left:15px;
+  }
   & p{
     font-size:15px;
   }
@@ -59,7 +63,10 @@ header {
 }
 
 .jumbo-container{
-  padding:40px;
+  padding: 40px 0px 40px 0px;
+  & h1 {
+    word-wrap: break-word;
+  }
 }
 
 .jumbo-container-text{
@@ -71,16 +78,58 @@ body .well, .container .well, .container-fluid .well, body .jumbotron, .containe
   padding:0px;
 }
 
-.title-bg > h1 > a {
+article header > h1 > a{
   color:white;
 
   padding-top:20px;
   padding-bottom:20px;
+  &:hover, &:focus, &:active
+  {
+    color:white !important;
+    opacity:0.9;
+  }
 }
 
-.title-bg{
+article header > div > a >  time{
+  color:white !important;
+  text-decoration:none;
+  &:hover {
+    text-decoration:none;
+  }
+}
+
+article header > div > a{
+  text-decoration:none;
+  &:hover {
+    text-decoration:none;
+    opacity:0.7;
+  }
+}
+
+
+.sticky > div > header{
+  background-color:#ff9800 !important;
+}
+
+article header{
 
   color:white;
+
+}
+
+article > div > header > h1 {
+  padding-left:30px;
+  padding-right:30px;
+}
+
+article > div > img, iframe, video, embed{
+  max-width:100% !important;
+  display:block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 .category-color {
@@ -101,7 +150,7 @@ body .well, .container .well, .container-fluid .well, body .jumbotron, .containe
   top:-80px;
 }
 
-footer{ padding-top:45px;padding-bottom:25px;
+footer{
 
 
   & h3 {
@@ -114,6 +163,11 @@ footer{ padding-top:45px;padding-bottom:25px;
 
   & ul{
     padding-left:15px;
+  }
+  & .footer-bg {
+    padding-top:80px;
+    padding-bottom:25px;
+
   }
 }
 
@@ -190,8 +244,14 @@ button.md-raised {
     -ms-transition: all 3s ease; /* Opera */
     transition: all 3s ease;
     max-width: 100%;
+    max-height:700px;
 
-  }}
+
+  }
+  & > a > img {
+    opacity:1;
+  }
+}
 .mg-image:hover img {
   -webkit-transform:scale(1.25); /* Safari and Chrome */
   -moz-transform:scale(1.25); /* Firefox */
@@ -252,4 +312,54 @@ h1,h2,h3,h4,h5,h6 {
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   text-decoration:underline;
   opacity:1;
+}
+
+.nav-left{
+  left: 10px;
+  position: absolute;
+}
+
+.nav-right{
+  right:10px;
+  position:absolute;
+}
+
+.post-nav{
+  height:200px;
+  margin-top: -250px;
+  position: relative;
+  top: 100px;
+  z-index: 9;
+}
+
+article {
+  margin-bottom:40px;
+}
+
+.article-text {
+  & > h1{
+    padding-top:60px;
+  }
+  & > div > a {
+    color:black;
+    &:hover {
+      color:black;
+      opacity:0.8;
+
+    }
+  }
+}
+.image-home {
+  width:100%;
+}
+
+.entry-meta {
+  font-size:17px;
+  margin-top:20px;
+}
+
+.comments{
+  & a, a:focus, a:active, a:hover {
+    color:black;
+  }
 }

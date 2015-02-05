@@ -1,2 +1,9 @@
-<time class="updated" datetime="<?php echo get_the_time('c'); ?>"><?php echo get_the_date(); ?></time>
-<p class="byline author vcard"><?php echo __('By', 'roots'); ?> <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>" rel="author" class="fn"><?php echo get_the_author(); ?></a></p>
+<div class="entry-meta">
+  <a href="<?php the_permalink(); ?>">
+  <time class="updated" datetime="<?php echo get_the_time('c'); ?>"><?php echo get_the_date(); ?></time>
+  </a>,
+<?php
+  $category = get_the_category();
+echo '<a class="text-center category-color" href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>';
+?>
+  </div>
